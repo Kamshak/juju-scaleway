@@ -65,6 +65,7 @@ class Client(object):
         params = dict(
             name=name,
             image=image,
+            commercial_type="VC1S",
             organization=self.access_key)
 
         data = self.request('/servers', method='POST', params=params)
